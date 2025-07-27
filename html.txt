@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modul & Pengumpulan Tugas</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; padding: 20px; max-width: 600px; margin: auto; }
+    h1 { color: #2c3e50; }
+    a.button { background: #3498db; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 10px 0; }
+    .upload-form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; margin-top: 20px; }
+    input, textarea { width: 100%; padding: 10px; margin: 8px 0; }
+    input[type="submit"] { background: #2ecc71; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>📘 Modul Pembelajaran</h1>
+  <p>Klik tombol di bawah untuk mengunduh modul:</p>
+  <a class="button" href="https://example.com/modul.pdf" target="_blank">Download Modul</a>
+
+  <div class="upload-form">
+    <h2>📤 Kirim Tugas Kamu</h2>
+    <form action="https://formsubmit.co/your-email@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="text" name="kelas" placeholder="Kelas" required>
+      <input type="file" name="tugas" accept=".txt,.pdf,.docx" required>
+      
+      <!-- Optional hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      
+      <input type="submit" value="Kirim Tugas">
+    </form>
+  </div>
+</body>
+</html>
